@@ -124,7 +124,7 @@ const mouse = new THREE.Vector2();
 function loadPlanet() {
     return new Promise((resolve, reject) => {
         const loader = new GLTFLoader();
-        loader.load(`models/${planetName.toLowerCase()}.glb`, function (gltf) {
+        loader.load(`${planetName.toLowerCase()}.glb`, function (gltf) {
             const planetModel = gltf.scene;
             scene.add(planetModel);
             planetModel.scale.set(planetInfo.scale, planetInfo.scale, planetInfo.scale);
