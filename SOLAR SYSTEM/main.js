@@ -26,7 +26,7 @@ camera.lookAt(0, 0, 0);
 
 // Create the Sun
 const sunGeometry = new THREE.SphereGeometry(5, 64, 64);
-const sunTexture = new THREE.TextureLoader().load('./public/8k_sun.jpg');
+const sunTexture = new THREE.TextureLoader().load('/public/8k_sun.jpg');
 const sunMaterial = new THREE.MeshBasicMaterial({ map: sunTexture});
 const sun = new THREE.Mesh(sunGeometry, sunMaterial);
 SolarScene.add(sun);
